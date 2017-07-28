@@ -17,6 +17,8 @@ function findMeasurementForDateTime (measurements, date, time = '00:00') {
 }
 
 function prefixWithLocation (location, text, separator = ' ') {
+	location = location.toUpperCase()
+
 	if ( ! location) separator = ''
 
 	if (text.length > 160) {
@@ -64,7 +66,7 @@ export default async function createText (latitude, longitude, location = '') {
 
 	// Use name of nearest weather station
 	if ( ! location) {
-		location = _.get(_(measurements).find((child) => child.name === 'obs'), 'attributes.station', '').toUpperCase()
+		location = _.get(_(measurements).find((child) => child.name === 'obs'), 'attributes.station', '')
 	}
 
 	const date      = moment.utc()
