@@ -1,0 +1,50 @@
+{
+	"name": "sms-format-api",
+	"version": "0.1.0",
+	"private": true,
+	"description": "SMS Format API.",
+	"main": "index.js",
+	"scripts": {
+		"start": "babel-node src/index.js",
+		"watch": "nodemon src/index.es5.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kukua/sms-format-api.git"
+	},
+	"author": "Kukua Team <dev@kukua.cc>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kukua/sms-format-api/issues"
+	},
+	"homepage": "https://github.com/kukua/sms-format-api#readme",
+	"dependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.24.1",
+		"babel-plugin-transform-decorators-legacy": "^1.3.4",
+		"babel-plugin-transform-flow-strip-types": "^6.22.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"body-parser": "^1.17.2",
+		"bunyan": "^1.8.10",
+		"bunyan-debug-stream": "^1.0.8",
+		"bunyan-rotating-file-stream": "^1.6.2",
+		"connect-nocache": "^1.1.0",
+		"cors": "^2.8.4",
+		"dotenv": "^4.0.0",
+		"express": "^4.15.3",
+		"express-basic-auth": "^1.1.1",
+		"express-request-id": "^1.4.0",
+		"lodash": "^4.17.4",
+		"memory-cache": "^0.2.0",
+		"moment-timezone": "^0.5.13",
+		"morgan": "^1.8.2",
+		"request-promise": "^4.2.1",
+		"xml-parser": "^1.2.1"
+	},
+	"devDependencies": {
+		"nodemon": "^1.11.0"
+	}
+}
