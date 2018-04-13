@@ -7,6 +7,6 @@ export default {
 
 	navifeed: {
 		url: process.env.NAVIFEED_URL,
-		cacheTime: 10 * 60 * 1000, // ms
+        cacheTimeMS: 10 * 60 * 1000, // ms
 	},
 }
